@@ -15,10 +15,10 @@ Since Terra Firma Craft: The Next Generation(TFC:TNG) has released its open beta
 ## Roadmap
 1.Basic resources
 
-||Iron|Copper|Brass|Kelp|
-|---|---|---|---|---|
-|Crafting Table|T|T|T|F|
-|Create Mixing|T|T|T|F|
+||Iron|Copper|Brass|Kelp|Wood(Planks)
+|---|---|---|---|---|---|
+|Crafting Table|T|T|T|F|F|
+|Create Mixing|T|T|T|F|F|
 
 2.Foods
 
