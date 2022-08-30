@@ -1,17 +1,17 @@
 println("Loading crafting table receipe");
 //iron
 //block-ingot-nugget
-craftingTable.remove(<item:minecraft:iron_ingot>);
-craftingTable.addShapeless("tfc_iron_ingot_to_nugget",<item:minecraft:iron_nugget> * 9,[<item:tfc:metal/ingot/wrought_iron>]);
+craftingTable.remove(<item:minecraft:iron_nugget>);
+craftingTable.addShapeless("tfc_wrought_iron_ingot_to_nugget",<item:minecraft:iron_nugget> * 9,[<item:tfc:metal/ingot/wrought_iron>]);
 craftingTable.addShapeless("iron_to_nugget",<item:minecraft:iron_nugget> * 9,[<tag:items:forge:ingots/iron>]);
 craftingTable.remove(<item:minecraft:iron_ingot>);
-craftingTable.addShapeless("nugget_to_tfc_iron",<item:tfc:metal/ingot/wrought_iron>,
+craftingTable.addShapeless("nugget_to_tfc_wrought_iron",<item:tfc:metal/ingot/wrought_iron>,
 [<item:minecraft:iron_nugget>,<item:minecraft:iron_nugget>,<item:minecraft:iron_nugget>,
 <item:minecraft:iron_nugget>,<item:minecraft:iron_nugget>,<item:minecraft:iron_nugget>,
 <item:minecraft:iron_nugget>,<item:minecraft:iron_nugget>,<item:minecraft:iron_nugget>]);
 
 craftingTable.remove(<item:minecraft:iron_block>);
-craftingTable.addShapeless("tfc_iron_to_block",<item:minecraft:iron_block>,
+craftingTable.addShapeless("tfc_wrought_iron_to_block",<item:minecraft:iron_block>,
 [<item:tfc:metal/ingot/wrought_iron>,<item:tfc:metal/ingot/wrought_iron>,<item:tfc:metal/ingot/wrought_iron>,
 <item:tfc:metal/ingot/wrought_iron>,<item:tfc:metal/ingot/wrought_iron>,<item:tfc:metal/ingot/wrought_iron>,
 <item:tfc:metal/ingot/wrought_iron>,<item:tfc:metal/ingot/wrought_iron>,<item:tfc:metal/ingot/wrought_iron>]);
@@ -103,3 +103,23 @@ craftingTable.addShapeless("tfc_dried_kelp_to_block",<item:minecraft:dried_kelp_
 <item:tfc:food/dried_kelp>,<item:tfc:food/dried_kelp>,<item:tfc:food/dried_kelp>]);
 //items
 craftingTable.addShaped("tfc_dried_kelp_spout",<item:create:spout>,[[<item:create:copper_casing>],[<item:tfc:food/dried_kelp>]]);
+craftingTable.addShaped("tfc_dried_kelp_belt_connector",<item:create:belt_connector>,[[<item:tfc:food/dried_kelp>,<item:tfc:food/dried_kelp>,<item:tfc:food/dried_kelp>],[<item:tfc:food/dried_kelp>,<item:tfc:food/dried_kelp>,<item:tfc:food/dried_kelp>]]);
+craftingTable.addShaped("tfc_dried_andesite_funnel",<item:create:andesite_funnel>*2,[[<item:create:andesite_alloy>],[<item:tfc:food/dried_kelp>]]);
+craftingTable.addShaped("tfc_dried_andesite_tunnel",<item:create:andesite_tunnel>*2,[[<item:create:andesite_alloy>,<item:create:andesite_alloy>],[<item:tfc:food/dried_kelp>,<item:tfc:food/dried_kelp>]]);
+craftingTable.addShaped("tfc_dried_brass_funnel",<item:create:brass_funnel>*2,[[<item:create:electron_tube>],[<tag:items:forge:ingots/brass>],[<item:tfc:food/dried_kelp>]]);
+craftingTable.addShaped("tfc_dried_brass_tunnel",<item:create:brass_tunnel>*2,[[<item:create:electron_tube>],[<tag:items:forge:ingots/brass>,<tag:items:forge:ingots/brass>],[<item:tfc:food/dried_kelp>,<item:tfc:food/dried_kelp>]]);
+
+//andesite alloy
+craftingTable.remove(<item:create:andesite_alloy>);
+craftingTable.addShapeless("ct_andesite_alloy_zinc",<item:create:andesite_alloy>,[<item:tfc:powder/flux>,<tag:items:forge:ingots/zinc>,<item:tfc:powder/flux>,<tag:items:forge:ingots/zinc>]);
+craftingTable.addShapeless("ct_andesite_alloy_castiron",<item:create:andesite_alloy>,[<item:tfc:powder/flux>,<item:tfc:powder/flux>,<tag:items:forge:ingots/cast_iron>,<tag:items:forge:ingots/cast_iron>]);
+
+//blaze burner
+craftingTable.remove(<item:create:empty_blaze_burner>);
+craftingTable.remove(<item:create:blaze_burner>);
+craftingTable.addShaped("tfc_empty_blaze_burner",<item:create:empty_blaze_burner>,
+[[<item:minecraft:air>,<item:create:iron_sheet>,<item:minecraft:air>],
+[<item:create:iron_sheet>,<tag:items:forge:stone>,<item:create:iron_sheet>],
+[<item:minecraft:air>,<item:create:iron_sheet>,<item:minecraft:air>]]);
+craftingTable.addShapeless("tfc_blaze_burner",<item:create:blaze_burner>,
+[<item:create:empty_blaze_burner>,<item:minecraft:obsidian>]);
