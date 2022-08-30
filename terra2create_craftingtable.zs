@@ -111,9 +111,9 @@ craftingTable.addShaped("tfc_dried_brass_tunnel",<item:create:brass_tunnel>*2,[[
 
 //andesite alloy
 craftingTable.remove(<item:create:andesite_alloy>);
-craftingTable.addShapeless("ct_andesite_alloy_zinc",<item:create:andesite_alloy>,[<item:tfc:powder/flux>,<tag:items:forge:ingots/zinc>,<item:tfc:powder/flux>,<tag:items:forge:ingots/zinc>]);
-craftingTable.addShapeless("ct_andesite_alloy_castiron",<item:create:andesite_alloy>,[<item:tfc:powder/flux>,<item:tfc:powder/flux>,<tag:items:forge:ingots/cast_iron>,<tag:items:forge:ingots/cast_iron>]);
-
+craftingTable.addShapeless("ct_andesite_alloy_zinc",<item:create:andesite_alloy>,[<item:tfc:powder/flux>,<item:tfc:powder/flux>,<item:create:zinc_nugget>,<item:create:zinc_nugget>]);
+craftingTable.addShapeless("ct_andesite_alloy_cast_iron",<item:create:andesite_alloy>,[<item:tfc:powder/flux>,<item:tfc:powder/flux>,<tag:items:forge:ingots/cast_iron>,<tag:items:forge:ingots/cast_iron>]);
+craftingTable.addShapeless("ct_andesite_alloy_iron_nugget",<item:create:andesite_alloy>,[<item:tfc:powder/flux>,<item:tfc:powder/flux>,<item:minecraft:iron_nugget>]);
 //blaze burner
 craftingTable.remove(<item:create:empty_blaze_burner>);
 craftingTable.remove(<item:create:blaze_burner>);
@@ -123,3 +123,19 @@ craftingTable.addShaped("tfc_empty_blaze_burner",<item:create:empty_blaze_burner
 [<item:minecraft:air>,<item:create:iron_sheet>,<item:minecraft:air>]]);
 craftingTable.addShapeless("tfc_blaze_burner",<item:create:blaze_burner>,
 [<item:create:empty_blaze_burner>,<item:minecraft:obsidian>]);
+
+//wool
+craftingTable.remove(<item:create:attribute_filter>);
+craftingTable.remove(<item:create:nozzle>);
+craftingTable.remove(<item:create:filter>);
+craftingTable.remove(<item:create:red_seat>);
+craftingTable.addShaped("wool_attribute_filter",<item:create:attribute_filter>,[[<item:create:brass_nugget>,<item:tfc:wool_cloth>,<item:create:brass_nugget>]]);
+craftingTable.addShaped("wool_nozzle",<item:create:nozzle>,
+[[<item:minecraft:air>,<item:create:andesite_alloy>,<item:minecraft:air>],
+[<item:minecraft:air>,<item:tfc:wool_cloth>,<item:minecraft:air>],
+[<item:create:andesite_alloy>,<item:create:andesite_alloy>,<item:create:andesite_alloy>]]);
+craftingTable.addShaped("wool_fliter",<item:create:filter>,[[<item:create:andesite_alloy>,<item:tfc:wool_cloth>,<item:create:andesite_alloy>]]);
+craftingTable.addShapeless("wool_red_seat",<item:create:red_seat>,[<tag:items:minecraft:wooden_slabs>,<item:tfc:wool_cloth>,<item:minecraft:red_dye>]);
+craftingTable.addShaped("wool_white_sail",<item:create:white_sail>*2,
+[[<item:tfc:wool_cloth>,<item:minecraft:stick>],
+[<item:minecraft:stick>,<item:create:andesite_alloy>]]);
