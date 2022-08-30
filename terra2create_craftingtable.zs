@@ -92,3 +92,14 @@ craftingTable.addShapeless("nugget_to_tfc_brass",<item:tfc:metal/ingot/brass>,
 <item:create:brass_nugget>,<item:create:brass_nugget>,<item:create:brass_nugget>,
 <item:create:brass_nugget>,<item:create:brass_nugget>,<item:create:brass_nugget>]);
 craftingTable.addShapeless("block_to_tfc_brass",<item:tfc:metal/ingot/brass>*9,[<item:create:brass_block>]);
+
+//kelp
+//block-kelp
+craftingTable.remove(<item:minecraft:dried_kelp>);
+craftingTable.addShapeless("block_to_tfc_dried_kelp",<item:tfc:food/dried_kelp>*9,[<item:minecraft:dried_kelp_block>]);
+craftingTable.addShapeless("tfc_dried_kelp_to_block",<item:minecraft:dried_kelp_block>,
+[<item:tfc:food/dried_kelp>,<item:tfc:food/dried_kelp>,<item:tfc:food/dried_kelp>,
+<item:tfc:food/dried_kelp>,<item:tfc:food/dried_kelp>,<item:tfc:food/dried_kelp>,
+<item:tfc:food/dried_kelp>,<item:tfc:food/dried_kelp>,<item:tfc:food/dried_kelp>]);
+//items
+craftingTable.addShaped("tfc_dried_kelp_spout",<item:create:spout>,[[<item:create:copper_casing>],[<item:tfc:food/dried_kelp>]]);
