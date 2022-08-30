@@ -14,17 +14,5 @@ Since Terra Firma Craft: The Next Generation(TFC:TNG) has released its open beta
 4.Enjoy!
 
 ## Roadmap
-1.Basic resources
-
-||Iron|Copper|Brass|Kelp|Wood(Planks)
-|---|---|---|---|---|---|
-|Crafting Table|T|T|T|F|T|
-|Create Mixing|T|T|T|F|F|
-
-2.Foods
-
-working on
-
-3.Metal Smelting and Casting
-
-working on
+1. Use TFC items and methods to make Create items.
+2. Use Create methods to produce TFC items. 
