@@ -16,4 +16,4 @@ Since Terra Firma Craft: The Next Generation(TFC:TNG) has released its open beta
 ||Iron|Copper|Brass|
 |---|---|---|---|
 |Crafting Table|F|T|F|
-|Create Mxixing|F|F|F|
+|Create Mixing|F|F|F|
