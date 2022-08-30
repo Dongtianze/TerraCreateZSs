@@ -5,13 +5,10 @@ Since Terra Firma Craft: The Next Generation(TFC:TNG) has released its open beta
 
 ## How to use?
 
-1.Make sure that you already installed the forge version of TFC:TNG, Create, CraftTweaker, CreateTweaker and all their dependencies in Minecraft 1.18.2.
-
-2.Run the game for once if you haven't do so.
-
-3.Drag all the .zs file in the project to your .minecraft/scripts folder.
-
-4.Enjoy!
+1. Make sure that you already installed the forge version of TFC:TNG, Create, CraftTweaker, CreateTweaker and all their dependencies in Minecraft 1.18.2.
+2. Run the game for once if you haven't do so.
+3. Drag all the .zs file in the project to your .minecraft/scripts folder.
+4. Enjoy!
 
 ## Roadmap
 1. Use TFC items and methods to make Create items.
