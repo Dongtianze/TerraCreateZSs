@@ -1,13 +1,30 @@
+println("Loading crafting table receipe");
 //iron
+//block-ingot-nugget
 craftingTable.remove(<item:minecraft:iron_ingot>);
 craftingTable.addShapeless("tfc_iron_ingot_to_nugget",<item:minecraft:iron_nugget> * 9,[<item:tfc:metal/ingot/wrought_iron>]);
-craftingTable.addShapeless("iron_ingot_to_nugget",<item:minecraft:iron_nugget> * 9,[<tag:items:forge:ingots/iron>]);
+craftingTable.addShapeless("iron_to_nugget",<item:minecraft:iron_nugget> * 9,[<tag:items:forge:ingots/iron>]);
 craftingTable.remove(<item:minecraft:iron_ingot>);
 craftingTable.addShapeless("nugget_to_tfc_iron",<item:tfc:metal/ingot/wrought_iron>,
 [<item:minecraft:iron_nugget>,<item:minecraft:iron_nugget>,<item:minecraft:iron_nugget>,
 <item:minecraft:iron_nugget>,<item:minecraft:iron_nugget>,<item:minecraft:iron_nugget>,
 <item:minecraft:iron_nugget>,<item:minecraft:iron_nugget>,<item:minecraft:iron_nugget>]);
+
+craftingTable.remove(<item:minecraft:iron_block>);
+craftingTable.addShapeless("tfc_iron_to_block",<item:minecraft:iron_block>,
+[<item:tfc:metal/ingot/wrought_iron>,<item:tfc:metal/ingot/wrought_iron>,<item:tfc:metal/ingot/wrought_iron>,
+<item:tfc:metal/ingot/wrought_iron>,<item:tfc:metal/ingot/wrought_iron>,<item:tfc:metal/ingot/wrought_iron>,
+<item:tfc:metal/ingot/wrought_iron>,<item:tfc:metal/ingot/wrought_iron>,<item:tfc:metal/ingot/wrought_iron>]);
+
+craftingTable.addShapeless("iron_to_block",<item:minecraft:iron_block>,
+[<tag:items:forge:ingots/iron>,<tag:items:forge:ingots/iron>,<tag:items:forge:ingots/iron>,
+<tag:items:forge:ingots/iron>,<tag:items:forge:ingots/iron>,<tag:items:forge:ingots/iron>,
+<tag:items:forge:ingots/iron>,<tag:items:forge:ingots/iron>,<tag:items:forge:ingots/iron>]);
+
+craftingTable.addShapeless("block_to_tfc_iron",<item:tfc:metal/ingot/wrought_iron>*9,
+[<item:minecraft:iron_block>]);
 //copper
+//block-ingot-nugget
 craftingTable.remove(<item:minecraft:copper_ingot>);
 craftingTable.remove(<item:minecraft:copper_block>);
 craftingTable.remove(<item:create:copper_nugget>); 
@@ -26,7 +43,7 @@ craftingTable.addShapeless("nugget_to_tfc_copper",<item:tfc:metal/ingot/copper>,
 craftingTable.remove(<item:create:fluid_pipe>); 
 craftingTable.addShaped("all_copper_to_fluid_pipe",<item:create:fluid_pipe>*4,[[<tag:items:forge:plates/copper>,<tag:items:forge:ingots/copper>,<tag:items:forge:plates/copper>]]);
 craftingTable.addShaped("all_copper_to_fluid_pipe_v",<item:create:fluid_pipe>*4,[[<tag:items:forge:plates/copper>],[<tag:items:forge:ingots/copper>],[<tag:items:forge:plates/copper>]]);
-
+//items
 craftingTable.remove(<item:create:diving_helmet>);
 craftingTable.addShaped("divinghelmet_all_copper",<item:create:diving_helmet>,
 [[<tag:items:forge:ingots/copper>,<tag:items:forge:ingots/copper>,<tag:items:forge:ingots/copper>],
@@ -46,4 +63,13 @@ craftingTable.addShaped("divingboot_allcopper",<item:create:diving_boots>,
 
 craftingTable.remove(<item:create:steam_whistle>);
 craftingTable.addShaped("steam_whistle_all_copper",<item:create:steam_whistle>,[[<item:create:golden_sheet>],[<tag:items:forge:ingots/copper>]]);
+
 //brass
+//block-ingot-nugget
+//thanks to Create, they use NBT for brass
+craftingTable.remove(<item:create:brass_ingot>);
+craftingTable.addShapeless("nugget_to_tfc_brass",<item:tfc:metal/ingot/brass>,
+[<item:create:brass_nugget>,<item:create:brass_nugget>,<item:create:brass_nugget>,
+<item:create:brass_nugget>,<item:create:brass_nugget>,<item:create:brass_nugget>,
+<item:create:brass_nugget>,<item:create:brass_nugget>,<item:create:brass_nugget>]);
+craftingTable.addShapeless("block_to_tfc_brass",<item:tfc:metal/ingot/brass>*9,[<item:create:brass_block>]);
