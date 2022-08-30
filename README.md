@@ -5,6 +5,6 @@ Since Terra Firma Craft: The Next Generation(TFC:TNG) has released its open beta
 
 2.Run the game for once if you haven't do so.
 
-3.Drag all the .zs file in the project to your .minecraft/script folder.
+3.Drag all the .zs file in the project to your .minecraft/scripts folder.
 
 4.Enjoy!
