@@ -1,1 +1,2 @@
-<recipetype:tfc:heating>.add
+var HeatingManager = <recipetype:tfc:heating>;
+HeatingManager.addRecipe();
