@@ -15,5 +15,5 @@ Since Terra Firma Craft: The Next Generation(TFC:TNG) has released its open beta
 ## Roadmap
 ||Iron|Copper|Brass|
 |---|---|---|---|
-|Crafting Table|F|T|T|
-|Create Mixing|F|F|F|
+|Crafting Table|T|T|T|
+|Create Mixing|T|T|T|
