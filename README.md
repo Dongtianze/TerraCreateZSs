@@ -14,5 +14,5 @@ Since Terra Firma Craft: The Next Generation(TFC:TNG) has released its open beta
 4.Enjoy!
 
 ## Roadmap
-1. Use TFC items and methods to make Create items.
-2. Use Create methods to produce TFC items. 
+1. Use TFC items and methods to make Create items. (finished for now)
+2. Use Create methods to produce TFC items. (working on, big project)
