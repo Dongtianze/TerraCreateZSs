@@ -111,9 +111,10 @@ craftingTable.addShaped("tfc_dried_brass_tunnel",<item:create:brass_tunnel>*2,[[
 
 //andesite alloy
 craftingTable.remove(<item:create:andesite_alloy>);
-craftingTable.addShapeless("ct_andesite_alloy_zinc",<item:create:andesite_alloy>,[<item:tfc:powder/flux>,<item:tfc:powder/flux>,<item:create:zinc_nugget>,<item:create:zinc_nugget>]);
+craftingTable.addShapeless("ct_andesite_alloy_zinc_nugget",<item:create:andesite_alloy>,[<item:tfc:powder/flux>,<item:tfc:powder/flux>,<item:create:zinc_nugget>,<item:create:zinc_nugget>]);
 craftingTable.addShapeless("ct_andesite_alloy_cast_iron",<item:create:andesite_alloy>,[<item:tfc:powder/flux>,<item:tfc:powder/flux>,<tag:items:forge:ingots/cast_iron>,<tag:items:forge:ingots/cast_iron>]);
 craftingTable.addShapeless("ct_andesite_alloy_iron_nugget",<item:create:andesite_alloy>,[<item:tfc:powder/flux>,<item:tfc:powder/flux>,<item:minecraft:iron_nugget>]);
+
 //blaze burner
 craftingTable.remove(<item:create:empty_blaze_burner>);
 craftingTable.remove(<item:create:blaze_burner>);
@@ -139,3 +140,12 @@ craftingTable.addShapeless("wool_red_seat",<item:create:red_seat>,[<tag:items:mi
 craftingTable.addShaped("wool_white_sail",<item:create:white_sail>*2,
 [[<item:tfc:wool_cloth>,<item:minecraft:stick>],
 [<item:minecraft:stick>,<item:create:andesite_alloy>]]);
+
+//slime ball
+craftingTable.remove(<item:minecraft:slime_block>);
+craftingTable.addShapeless("slime_barley_dough",<item:minecraft:slime_ball>,[<item:tfc:food/barley_dough>,<item:minecraft:lime_dye>]);
+craftingTable.addShapeless("slime_maize_dough",<item:minecraft:slime_ball>,[<item:tfc:food/maize_dough>,<item:minecraft:lime_dye>]);
+craftingTable.addShapeless("slime_oat_dough",<item:minecraft:slime_ball>,[<item:tfc:food/oat_dough>,<item:minecraft:lime_dye>]);
+craftingTable.addShapeless("slime_rice_dough",<item:minecraft:slime_ball>,[<item:tfc:food/rice_dough>,<item:minecraft:lime_dye>]);
+craftingTable.addShapeless("slime_rye_dough",<item:minecraft:slime_ball>,[<item:tfc:food/rye_dough>,<item:minecraft:lime_dye>]);
+craftingTable.addShapeless("slime_wheat_dough",<item:minecraft:slime_ball>,[<item:tfc:food/wheat_dough>,<item:minecraft:lime_dye>]);
