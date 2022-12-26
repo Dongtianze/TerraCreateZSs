@@ -57,6 +57,6 @@ MillingManager.addRecipe("mill_oat_grain",[<item:tfc:food/oat_flour>%100,<item:t
 MillingManager.addRecipe("mill_barley_grain",[<item:tfc:food/barley_flour>%100,<item:tfc:food/barley_flour>%25],<item:tfc:food/barley_grain>);
 MillingManager.addRecipe("mill_maize_grain",[<item:tfc:food/maize_flour>%100,<item:tfc:food/maize_flour>%25],<item:tfc:food/maize_grain>);
 
-//soft stonesuuuu
+//soft stone
 MillingManager.addRecipe("mill_flux",[<item:tfc:powder/flux>%100,<item:tfc:powder/flux>%25],<tag:items:tfc:fluxstone>);
 

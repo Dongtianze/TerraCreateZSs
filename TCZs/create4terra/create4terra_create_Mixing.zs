@@ -61,6 +61,7 @@ MixingManager.addRecipe("mixing_poor_tetrahedrite", <constant:create:heat_condit
 MixingManager.addRecipe("mixing_rich_tetrahedrite", <constant:create:heat_condition:heated>, [<fluid:tfc:metal/copper>*35], [<item:tfc:ore/rich_tetrahedrite>], []);
 MixingManager.addRecipe("mixing_small_tetrahedrite", <constant:create:heat_condition:heated>, [<fluid:tfc:metal/copper>*25], [<item:tfc:ore/small_tetrahedrite>], []);
 
+//melt tools
 
 
 
